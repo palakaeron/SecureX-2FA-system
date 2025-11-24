@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SecureX</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="ig-bg">
+
+  <div class="ig-wrapper">
+
+    <!-- LEFT SIDE (branding) -->
+    <div class="ig-left">
+      <h1 class="brand">SecureX</h1>
+      <p class="brand-tag">Simple • Safe • Secure</p>
+    </div>
+
+    <!-- RIGHT SIDE (center auth card) -->
+    <div class="ig-card" id="authBox">
+      <div class="switch">
+        <button class="switch-btn active" onclick="showSignup()">Sign Up</button>
+        <button class="switch-btn" onclick="showSignin()">Sign In</button>
+      </div>
+
+      <!-- Dynamic content area -->
+      <div id="authContent"></div>
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

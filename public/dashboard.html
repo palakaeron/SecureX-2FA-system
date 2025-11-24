@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard — SecureX</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dash-bg">
+
+  <header class="dash-header">
+    <h1>🔐 Welcome to SecureX</h1>
+    <button class="btn secondary" onclick="window.location='main.html'">Logout</button>
+  </header>
+
+  <section class="dash-grid">
+
+    <div class="dash-card">
+      <h2>📌 What is 2FA?</h2>
+      <p>
+        Two-Factor Authentication adds a second step to login.  
+        Passwords can leak — 2FA prevents unauthorized access.
+      </p>
+    </div>
+
+    <div class="dash-card">
+      <h2>📲 How OTP Works</h2>
+      <ul>
+        <li>6-digit temporary code</li>
+        <li>Expires in few minutes</li>
+        <li>Sent to your personal device</li>
+        <li>Cannot be reused</li>
+      </ul>
+    </div>
+
+    <div class="dash-card">
+      <h2>🛡 Why It Matters</h2>
+      <p>
+        OTP makes it extremely hard for attackers to use stolen passwords.
+        This is why banks, Gmail, and Instagram use it.
+      </p>
+    </div>
+
+    <div class="dash-card">
+      <h2>👨‍💻 Backend of Our Project</h2>
+      <p>
+        We generate OTP → store → send → verify.
+        If OTP matches + not expired → access granted.
+      </p>
+      <small>
+        Tech stack: Express, MongoDB, Twilio API
+      </small>
+    </div>
+
+    <div class="dash-card">
+      <h2>🔐 Best Practices</h2>
+      <ul>
+        <li>Don’t share OTP</li>
+        <li>Use unique passwords</li>
+        <li>Enable 2FA everywhere</li>
+        <li>Beware of phishing</li>
+      </ul>
+    </div>
+
+    <div class="dash-card">
+      <h2>⚡ Advanced (Pro)</h2>
+      <ul>
+        <li>TOTP (Google Authenticator)</li>
+        <li>FIDO2 Hardware Keys</li>
+        <li>Biometric WebAuthn</li>
+        <li>SSO + Enterprise Identity</li>
+      </ul>
+    </div>
+
+  </section>
+
+</body>
+</html>
